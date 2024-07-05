@@ -12,23 +12,53 @@
 			"handle": "filesystem"
 		},
 		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/404\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/about\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/calls\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/contacto\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/convocatorias\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/nosotros\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/services\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/servicios\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
+		},
+		{
 			"src": "/.*",
-			"dest": "/404.html",
+			"dest": "_render",
 			"status": 404
 		}
-	],
-	"images": {
-		"sizes": [
-			640,
-			750,
-			828,
-			1080,
-			1200,
-			1920,
-			2048,
-			3840
-		],
-		"domains": [],
-		"remotePatterns": []
-	}
+	]
 }
